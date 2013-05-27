@@ -16,7 +16,7 @@ PRODUCT_PACKAGES += \
     CMScreenshot \
     screenshot \
     su \
-    Superuser
+    Superuser.apk
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.ringtone=Sceptrum.ogg \
