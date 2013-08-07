@@ -76,6 +76,7 @@ $SED -i \
 
 # No need for recovery
 rm -rf $REPACK/ota/recovery
+sed -i '/recovery/d' $REPACK/ota/META-INF/com/google/android/updater-script
 
 # Strip modules
 #[ -d $REPACK/ota/system/lib/modules ] && \
