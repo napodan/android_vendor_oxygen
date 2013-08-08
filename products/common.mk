@@ -37,5 +37,4 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/oxygen/overlay/common
 
 PRODUCT_COPY_FILES += \
     vendor/oxygen/prebuilt/bin/sysinit:system/bin/sysinit \
-    vendor/oxygen/prebuilt/etc/hosts:system/etc/hosts \
     vendor/oxygen/prebuilt/etc/init.d/99complete:system/etc/init.d/99complete
