@@ -1,6 +1,8 @@
-$(call inherit-product, device/htc/bravo/full_bravo.mk)
 $(call inherit-product, vendor/oxygen/products/common.mk)
 $(call inherit-product, vendor/oxygen/products/gsm.mk)
+# This include must be a the end :
+# it includes generic mkfile which can override some variables
+$(call inherit-product, device/htc/bravo/full_bravo.mk)
 
 PRODUCT_NAME := oxygen_bravo
 PRODUCT_BRAND := htc
