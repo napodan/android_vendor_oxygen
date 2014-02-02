@@ -3,6 +3,7 @@ $(call inherit-product, vendor/oxygen/products/gsm.mk)
 # This include must be a the end :
 # it includes generic mkfile which can override some variables
 $(call inherit-product, device/htc/bravo/full_bravo.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/embedded.mk)
 
 PRODUCT_NAME := oxygen_bravo
 PRODUCT_BRAND := htc
@@ -19,3 +20,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_RELEASE_NAME := Bravo
 PRODUCT_VERSION_DEVICE_SPECIFIC :=
 -include vendor/oxygen/products/common_versions.mk
+ADDITIONAL_DEFAULT_PROPERTIES += \
+	ro.secure=0 \
+	ro.allow.mock.location=1 \
+	ro.debuggable=1 \
+	persist.service.adb.enable=1 \
