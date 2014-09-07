@@ -17,3 +17,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_RELEASE_NAME := Bravo
 PRODUCT_VERSION_DEVICE_SPECIFIC :=
 -include vendor/oxygen/products/common_versions.mk
+
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES := \
+	ro.secure=0 \
+	ro.allow.mock.location=1 \
+	ro.debuggable=1 \
+	persist.service.adb.enable=1
+
